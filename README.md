@@ -1,4 +1,5 @@
-# C Programs Implementation
+# C Advanced Programs Implementation
+![Advanced C Programming](https://bbb-main.blr1.digitaloceanspaces.com/uploads/course/advanced-c-programming-1720530803432.jpeg)
 
 This repository contains a collection of algorithms and problem-solving programs written in C . These programs cover a variety of data structures, algorithms, and mathematical problems, aiming to provide solutions and demonstrate coding techniques in both languages.
 
