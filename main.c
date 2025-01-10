@@ -11,7 +11,6 @@ int compare(int a, int b);
 
 
 
-
 int cash = 100;
 void Play(int bet) {
     char *arr = (char*)malloc(3*sizeof(char));
@@ -114,26 +113,6 @@ int main(void) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 int compare(int a,int b) {
     if(a>b) return 1;
     else return -1;
@@ -150,17 +129,6 @@ void bubble_sort(int *arr,int n, int (*compare)(int , int )) {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 

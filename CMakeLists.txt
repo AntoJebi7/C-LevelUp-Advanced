@@ -9,7 +9,8 @@ file(GLOB_RECURSE C_FILES "${CMAKE_SOURCE_DIR}/*.c")
 # Create a separate executable for each .c file
 foreach(C_FILE ${C_FILES})
     get_filename_component(EXEC_NAME ${C_FILE} NAME_WE)
-    add_executable(${EXEC_NAME} ${C_FILE})
+    add_executable(${EXEC_NAME} ${C_FILE}
+            arrays.c)
 endforeach()
 
 
