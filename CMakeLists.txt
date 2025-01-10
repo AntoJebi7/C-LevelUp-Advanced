@@ -3,14 +3,21 @@ project(cprograms C)
 
 set(CMAKE_C_STANDARD 11)
 
-# Find all .c files in the project directory
+# Find all .c files in the project directory (including subdirectories)
 file(GLOB_RECURSE C_FILES "${CMAKE_SOURCE_DIR}/*.c")
 
 # Create a separate executable for each .c file
 foreach(C_FILE ${C_FILES})
     get_filename_component(EXEC_NAME ${C_FILE} NAME_WE)
-    add_executable(${EXEC_NAME} ${C_FILE}
-            arrays.c)
-endforeach()
 
+    # Skip files that are not supposed to be directly compiled (optional)
+    # This excludes non-C files like CMakeLists.txt or other sources that you don't want to build
+    if(EXEC_NAME STREQUAL "CMakeLists")
+        continue()
+    endif()
+
+    # Add each .c file as a separate executable
+    add_executable(${EXEC_NAME} ${C_FILE}
+            arrays_with_pointers.c)
+endforeach()
 

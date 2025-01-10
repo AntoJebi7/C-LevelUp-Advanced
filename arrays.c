@@ -27,20 +27,20 @@ int main() {
 
     // 3D Array Implementation
     int arr3D[2][2][2] = {
-        {
-            {1, 2},
-            {3, 4}
+        {  // block 1
+            {1, 2}, //row 1
+            {3, 4}  // row 2
         },
-        {
-                {5, 6},
-                {7, 8}
+        {  // block 2
+                {5, 6}, //row 1
+                {7, 8}  // row 2
         }
     };
     printf("3D Array (2x2x2):\n");
     for (int i = 0; i < 2; i++) {
         for (int j = 0; j < 2; j++) {
             for (int k = 0; k < 2; k++) {
-                printf("%d ", arr3D[i][j][k]);
+                printf("%d ", arr3D[i][j][k]);  //block, row,column
             }
             printf("\n");
         }
