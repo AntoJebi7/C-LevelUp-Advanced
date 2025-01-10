@@ -3,6 +3,6 @@
 // Created by antoa on 10-01-2025.
 //
 int main() {
-    printf("hello");
+    printf("hello all");
     return 0;
 }
