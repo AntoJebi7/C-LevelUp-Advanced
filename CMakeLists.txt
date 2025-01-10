@@ -11,13 +11,10 @@ foreach(C_FILE ${C_FILES})
     get_filename_component(EXEC_NAME ${C_FILE} NAME_WE)
 
     # Skip files that are not supposed to be directly compiled (optional)
-    # This excludes non-C files like CMakeLists.txt or other sources that you don't want to build
     if(EXEC_NAME STREQUAL "CMakeLists")
         continue()
     endif()
 
     # Add each .c file as a separate executable
-    add_executable(${EXEC_NAME} ${C_FILE}
-            arrays_with_pointers.c)
+    add_executable(${EXEC_NAME} ${C_FILE})
 endforeach()
-
