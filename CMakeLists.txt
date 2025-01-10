@@ -18,5 +18,7 @@ foreach(C_FILE ${C_FILES})
     # Add each .c file as a separate executable
     add_executable(${EXEC_NAME} ${C_FILE}
             pointers.c
-            dynamic_memory_allocation.c)
+            dynamic_memory_allocation.c
+            string_functions.c
+            array_functions.c)
 endforeach()
