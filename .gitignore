@@ -5,6 +5,8 @@
 .idea/
 
 # Ignore executable files (you can adjust based on your needs)
+
+
 *.out
 *.exe
 *.a
