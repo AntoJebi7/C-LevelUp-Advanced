@@ -16,6 +16,7 @@ foreach(C_FILE ${C_FILES})
     endif()
 
     # Add each .c file as a separate executable
-    add_executable(${EXEC_NAME} ${C_FILE})
+    add_executable(${EXEC_NAME} ${C_FILE}
+            )
 
 endforeach()
