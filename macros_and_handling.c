@@ -8,16 +8,16 @@
 
 // Function to calculate the sum of any number of integers using variable arguments
 int sum(int num, ...) {
-    va_list args;
-    va_start(args, num);
+    va_list args; //... list argument variable
+    va_start(args, num); // ... and 14 args to be started
     int result = 0;
 
     // Loop through the variable arguments
     for (int i = 0; i < num; i++) {
-        result += va_arg(args, int);
+        result += va_arg(args, int);  // to get one arg from args (...) and its type int
     }
 
-    va_end(args);
+    va_end(args);  // to end the operation
     return result;
 }
 
@@ -43,7 +43,7 @@ int main() {
 #endif
 
     // Demonstrating variable arguments
-    int result = sum(3, 10, 20, 30);
+    int result = sum(14, 10, 20, 30,454,565,6,76,7,68,78,7,8,7,78);
     printf("The sum of 10, 20, and 30 is: %d\n", result);
 
     // Demonstrate error handling
