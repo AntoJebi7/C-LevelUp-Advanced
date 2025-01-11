@@ -17,6 +17,7 @@ foreach(C_FILE ${C_FILES})
 
     # Add each .c file as a separate executable
     add_executable(${EXEC_NAME} ${C_FILE}
-            )
+            Linked_Lists/Linked_list_ex1.c
+    )
 
 endforeach()
