@@ -13,6 +13,7 @@ int printlist(node *n) {
 
 }
 int main() {
+    printf("basic self referential structure");
     node n1 = {1,NULL};
     node n2 = {2,NULL};
     node n3 = {3,NULL};
