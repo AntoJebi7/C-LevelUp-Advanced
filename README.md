@@ -13,4 +13,4 @@ This repository contains a collection of algorithms and problem-solving programs
 ![self_referential_structures](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Self-Referential-Structures.png))
 
 ```bash
-git clone https://github.com/AntoJebi7/C-and-CPP-Solverse.git
+git clone https://github.com/AntoJebi7/C-LevelUp-Advanced.git
