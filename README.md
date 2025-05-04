@@ -1,4 +1,4 @@
-# C Advanced Programs
+# C Programs Snippets
 ![Advanced C Programming](https://bbb-main.blr1.digitaloceanspaces.com/uploads/course/advanced-c-programming-1720530803432.jpeg)
 
 
